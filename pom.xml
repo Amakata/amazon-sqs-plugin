@@ -10,16 +10,15 @@
         <relativePath />
     </parent>
 
-    <groupId>io.relution.jenkins</groupId>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/AWS+SQS+Plugin</url>
-    <artifactId>aws-sqs</artifactId>
-    <version>2.0.2-SNAPSHOT</version>
+    <artifactId>amazon-sqs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>hpi</packaging>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+SQS+Build+Trigger+Plugin</url>
 
-    <name>AWS SQS Build Trigger Plugin</name>
+    <name>Amazon SQS Build Trigger Plugin</name>
     <description>
-        This plugin triggers builds based on events received via Amazon Web
-        Services Simple Queue Service (AWS SQS) on a specified Queue.
+        This plugin triggers builds based on events received via Amazon Simple Queue Service 
+        (Amazon SQS) without CodeCommit on a specified Queue.
     </description>
 
     <scm>
@@ -46,6 +45,7 @@
         <mockito-core.version>2.12.0</mockito-core.version>
         <assertj-core.version>3.8.0</assertj-core.version>
         <junit.version>1.6</junit.version>
+        <joda-time.version>2.10</joda-time.version>
         <!-- Build plugins artifact version -->
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <animal-sniffer-maven-plugin.version>1.16</animal-sniffer-maven-plugin.version>
@@ -80,6 +80,11 @@
             <name>Max Kovgan</name>
             <email>max@opsguru.io</email>
         </developer>
+       <developer>
+            <id>amakata</id>
+            <name>Yoshihisa Amakata</name>
+            <email>amakata@gmail.com</email>
+        </developer>        
     </developers>
 
     <repositories>
@@ -168,6 +173,12 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
         </dependency>
 
     </dependencies>
