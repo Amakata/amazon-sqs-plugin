@@ -10,7 +10,7 @@
         <relativePath />
     </parent>
 
-    <artifactId>amazon-sqs</artifactId>
+    <artifactId>amazon-sqs-without-codecommit</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+SQS+Build+Trigger+Plugin</url>
@@ -30,7 +30,7 @@
     </scm>
 
     <properties>
-        <jenkins.version>2.63</jenkins.version>
+        <jenkins.version>2.121.2</jenkins.version>
         <java.level>8</java.level>
         <jenkins-test-harness.version>2.2</jenkins-test-harness.version>
         <!-- Dependencies artifact version -->
