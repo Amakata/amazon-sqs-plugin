@@ -8,7 +8,7 @@ buildPlugin(
         'windows',
     ],
     jenkinsVersions: [
-        '2.121.2'
+        '2.63'
     ],
     findbugs: [
         run: false

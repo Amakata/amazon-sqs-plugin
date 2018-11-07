@@ -15,7 +15,7 @@
     <packaging>hpi</packaging>
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+SQS+Build+Trigger+Plugin</url>
 
-    <name>Amazon SQS Build Trigger Plugin</name>
+    <name>Amazon SQS without Codecommit Build Trigger Plugin</name>
     <description>
         This plugin triggers builds based on events received via Amazon Simple Queue Service 
         (Amazon SQS) without CodeCommit on a specified Queue.
@@ -30,7 +30,7 @@
     </scm>
 
     <properties>
-        <jenkins.version>2.121.2</jenkins.version>
+        <jenkins.version>2.63</jenkins.version>
         <java.level>8</java.level>
         <jenkins-test-harness.version>2.2</jenkins-test-harness.version>
         <!-- Dependencies artifact version -->

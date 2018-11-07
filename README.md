@@ -1,4 +1,4 @@
-# Amazon SQS Plugin for Jenkins
+# Amazon SQS without CodwCommit Plugin for Jenkins
 
 A Jenkins plugin that allows using Events sent to Amazon Simple Queue Service (SQS) as a build trigger.
 
