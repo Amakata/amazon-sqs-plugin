@@ -69,9 +69,6 @@ public class SQSTrigger extends Trigger<Job<?, ?>> implements io.relution.jenkin
 
     private transient SQSQueueMonitorScheduler scheduler;
 
-//    private transient MessageParserFactory messageParserFactory;
-//    private transient EventTriggerMatcher eventTriggerMatcher;
-
     private transient ExecutorService executor;
 
     @DataBoundConstructor
@@ -151,30 +148,6 @@ public class SQSTrigger extends Trigger<Job<?, ?>> implements io.relution.jenkin
         }
         return this.scheduler;
     }
-
-//    @Inject
-//    public void setMessageParserFactory(final MessageParserFactory factory) {
-//        this.messageParserFactory = factory;
-//    }
-
-//    public MessageParserFactory getMessageParserFactory() {
-//        if (this.messageParserFactory == null) {
-//            io.relution.jenkins.awssqs.Context.injector().injectMembers(this);
-//        }
-//        return this.messageParserFactory;
-//    }
-
-//    @Inject
-//    public void setEventTriggerMatcher(final EventTriggerMatcher matcher) {
-//        this.eventTriggerMatcher = matcher;
-//    }
-
-//    public EventTriggerMatcher getEventTriggerMatcher() {
-//        if (this.eventTriggerMatcher == null) {
-//            io.relution.jenkins.awssqs.Context.injector().injectMembers(this);
-//        }
-//        return this.eventTriggerMatcher;
-//    }
 
     @Inject
     public void setExecutorService(final ExecutorService executor) {
